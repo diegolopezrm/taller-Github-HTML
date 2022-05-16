@@ -1,0 +1,117 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de contacto</title>
+  <style>
+    <!--
+      /* Font Definitions */
+      @font-face
+      {font-family:"Cambria Math";
+      panose-1:2 4 5 3 5 4 6 3 2 4;}
+      @font-face
+      {font-family:Calibri;
+      panose-1:2 15 5 2 2 2 4 3 2 4;}
+      @font-face
+      {font-family:"Segoe UI Symbol";
+      panose-1:2 11 5 2 4 2 4 2 2 3;}
+      /* Style Definitions */
+      p.MsoNormal, li.MsoNormal, div.MsoNormal
+      {margin-top:0cm;
+      margin-right:0cm;
+      margin-bottom:8.0pt;
+      margin-left:0cm;
+      line-height:107%;
+      font-size:11.0pt;
+      font-family:"Calibri",sans-serif;}
+      .MsoPapDefault
+      {margin-bottom:8.0pt;
+      line-height:107%;}
+      @page WordSection1
+      {size:612.0pt 792.0pt;
+      margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+      div.WordSection1
+      {page:WordSection1;}
+      @page WordSection2
+      {size:612.0pt 792.0pt;
+      margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+      div.WordSection2
+      {page:WordSection2;}
+      -->
+  </style>
+
+
+  
+  </head>
+
+
+<body>  
+  
+  <div class=WordSection1>
+      <p class=MsoNormal>
+        <button onclick="window.location.href='index.html'">
+            <b><span lang=ES-MX style='font-size:18.0pt;line-height:
+            107%'>Inicio</span></b>
+        </button>
+        <button onclick="window.location.href='fotosPage.html'">
+            <b><span lang=ES-MX style='font-size:18.0pt;line-height:
+            107%'>Fotos</span></b>
+        </button>
+        <button onclick="window.location.href='contactoPage.html'">
+            <b><span lang=ES-MX style='font-size:18.0pt;line-height:
+            107%'>Contacto</span></b>
+        </button>
+    </div>
+
+  <div class="contact_form">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbeme y en breve los pondremos en contacto contigo</h3>
+
+
+          <form action="submeter-formulario.php" method="post">       
+
+            
+                <p>
+                  <label for="nombre" class="colocar_nombre">Nombre
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+              
+                <p>
+                  <label for="email" class="colocar_email">Email
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                </p>
+            
+                <p>
+                  <label for="telefone" class="colocar_telefono">Teléfono
+                  </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>    
+              
+                <p>
+                  <label for="asunto" class="colocar_asunto">Asunto
+                    <span class="obligatorio">*</span>
+                  </label>
+                    <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                </p>    
+              
+                <p>
+                  <label for="mensaje" class="colocar_mensaje">Mensaje
+                    <span class="obligatorio">*</span>
+                  </label>                     
+                                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                                </p>                    
+              
+                <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+ 
+            
+          </form>
+    </div>  
+  </div>
+
+</body>
+</html>
